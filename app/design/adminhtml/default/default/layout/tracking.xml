@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <blacklist_adminhtml_tracking_index>
+        <reference name="content">
+            <block type="blacklist/adminhtml_tracking" name="blacklist" />
+        </reference>
+    </blacklist_adminhtml_tracking_index>
+    <blacklist_adminhtml_tracking_getlogin>
+        <block type="core/text_list" name="root" output="toHtml">
+            <block type="blacklist/adminhtml_tracking_edit_tab_login" name="tracking.edit.tab.login"/>
+        </block>
+    </blacklist_adminhtml_tracking_getlogin>
+    <blacklist_adminhtml_tracking_getcheckout>
+        <block type="core/text_list" name="root" output="toHtml">
+            <block type="blacklist/adminhtml_tracking_edit_tab_checkout" name="tracking.edit.tab.checkout"/>
+        </block>
+    </blacklist_adminhtml_tracking_getcheckout>
+</layout>

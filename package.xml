@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package>
+    <name>apdh+Apdh_Blacklist</name>
+    <version>0.0.5</version>
+    <stability>stable</stability>
+    <license uri="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache License 2.0</license>
+    <channel>8599ec1ae50b857ef81ed1b4c246caea</channel>
+    <extends/>
+    <summary>Additional anti-spam protection making definite email domains. Tracking user  in process login and checkout.</summary>
+    <description>Secure your store against span attack into register, newsletter and checkout.</description>
+    <notes>0.0.5:&#xD;
+Compatible with CE: 1.7 1.8 1.8.1 1.9 1.9.1 1.9.2 1.9.3&#xD;
+Stability: Stable Build&#xD;
+Description: Bug fixes and code optimization.&#xD;
+v0.0.5</notes>
+    <authors><author><name>Alex Daqui</name><user>MAG002816769</user><email>apdh92@hotmail.com</email></author></authors>
+    <date>2018-07-30</date>
+    <time>06:42:10</time>
+    <contents><target name="magecommunity"><dir name="Apdh"><dir name="Blacklist"><dir name="Block"><dir name="Adminhtml"><dir name="Tracking"><dir name="Edit"><file name="Form.php" hash="213051db2745cca11dab92d4d97c61ed"/><dir name="Tab"><file name="Checkout.php" hash="7fce54c44b24de5deb3e76fef05c2da2"/><file name="Form.php" hash="716e44db73f179a16d2e0ce3070ae9d4"/><file name="Login.php" hash="8172fb1dabd682723b71856d6bae8762"/></dir><file name="Tabs.php" hash="3d96f75e1a410427796ec526b822d125"/></dir><file name="Edit.php" hash="5b921cb6787dea33d601ad0f9c144005"/><file name="Grid.php" hash="65e39fb7f24ee97a1f9b3a8720fbf4af"/><dir name="Renderer"><file name="Email.php" hash="31966a1ce8f6ccfb1d589a106be09988"/><file name="Html.php" hash="a4c9b3df8fa2fcace37a636f66ccdaab"/></dir></dir><file name="Tracking.php" hash="3598506ed902e0086e3e0b49dee3755e"/></dir><dir name="System"><dir name="Config"><file name="Notice.php" hash="c777ff8198369014af62e3d22ebcc264"/></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="76630ad3017c1e42d0238e5528255b1b"/></dir><dir name="Model"><dir name="Observer"><file name="Checkout.php" hash="e4c633a714a4e58f684644e8d48dc242"/><file name="Newsletter.php" hash="69f532cb6a761353ff6a250368cc3a47"/><file name="Register.php" hash="1bfb5d477351db9e6f2a26efdf1e285c"/><file name="Tracking.php" hash="c96253d86823cee77396cd0d61b157cd"/></dir><dir name="Options"><file name="Blocks.php" hash="adb7558243cb6d5d08e617b4ff064f9a"/><file name="Choose.php" hash="d6a7863dda99f82249d5a66e2657369c"/><file name="Modules.php" hash="aedadfe2b9137839b60ecca168cccec7"/><file name="Users.php" hash="ed84df18e3a1d8166452eb1abb78b957"/></dir><dir name="Resource"><dir name="Tracking"><file name="Collection.php" hash="1c3bce00e526f899d8bf90b944620448"/></dir><file name="Tracking.php" hash="54b95942bdad06213170f7670a1a33dd"/><dir name="Trackinginfo"><file name="Collection.php" hash="780893424a4e47d73a6125ebb3f5fcc7"/></dir><file name="Trackinginfo.php" hash="b9623391dae2db16417ad88e1962bbd7"/></dir><file name="Tracking.php" hash="7f34ad1cc6a5580adcd041bbbd429ae8"/><file name="Trackinginfo.php" hash="db1941a382df54331b5d0c6720200e56"/></dir><dir name="controllers"><dir name="Adminhtml"><file name="TrackingController.php" hash="eebd0727bde24fc6f801e26a47dfcf64"/></dir></dir><dir name="etc"><file name="config.xml" hash="6c17d662fee7a83efd4cab826d7ac49f"/><file name="system.xml" hash="785eeb1b651d5a31a42b570f38bfb3c7"/></dir><dir name="sql"><dir name="blacklist_setup"><file name="mysql4-upgrade-0.0.3-0.0.4.php" hash="1f6d0a7eb7b3b3fe985a52f282b6c47e"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Apdh_Blacklist.xml" hash="087896088fc0d6c11ccd56ca53c1265a"/></dir></target><target name="magelocale"><dir name="es_ES"><file name="Apdh_Blacklist.csv" hash="74aec6ad24d1e297be8cea6773e1a105"/></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="tracking.xml" hash="766a5475bf6fbce1650be95ffd9df65b"/></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.4.0</min><max>7.0.0</max></php></required></dependencies>
+</package>
