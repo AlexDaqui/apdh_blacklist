@@ -1,7 +1,7 @@
 <?php
 /*
-* Author: Alex Daqui
-* Web page: http://apdhsolution.com
+* Author: Alex Patricio Daqui Hernandez
+* Web page: https://www.apdh.es
 */
 $installer = $this;
 $installer->run(

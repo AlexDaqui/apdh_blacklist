@@ -1,6 +1,7 @@
 # About apdh_blacklist
 
-Module Magento 1, With this extension you can avoid an attack of registration users, newletters and process checkout. You can see all notice in [APDH](https://www.apdh.es/)
+Module Magento 1, With this extension you can avoid an attack of registration users, newletters and process checkout. You can see all notice in [APDH](https://www.apdh.es/).
+You need download [Apdh_Core](https://github.com/AlexDaqui/apdh_core).
 
 ## Help
 

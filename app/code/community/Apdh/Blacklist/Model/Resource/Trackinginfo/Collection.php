@@ -1,7 +1,7 @@
 <?php
 /*
-* Author: Alex Daqui
-* Web page: http://apdhsolution.com
+* Author: Alex Patricio Daqui Hernandez
+* Web page: https://www.apdh.es
 */
 class Apdh_Blacklist_Model_Resource_Trackinginfo_Collection extends Mage_Core_Model_Resource_Db_Collection_Abstract
 {

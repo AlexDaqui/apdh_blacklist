@@ -1,9 +1,9 @@
 <?php
 /*
-* Author: Alex Daqui
-* Web page: http://apdhsolution.com
+* Author: Alex Patricio Daqui Hernandez
+* Web page: https://www.apdh.es
 */
-class Apdh_Blacklist_Adminhtml_TrackingController extends Mage_Adminhtml_Controller_action
+class Apdh_Blacklist_Adminhtml_TrackingController extends Mage_Adminhtml_Controller_Action
 {
 
     protected function _initAction()

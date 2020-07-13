@@ -1,7 +1,7 @@
 <?php
 /*
-* Author: Alex Daqui
-* Web page: http://apdhsolution.com
+* Author: Alex Patricio Daqui Hernandez
+* Web page: https://www.apdh.es
 */
 class Apdh_Blacklist_Model_Observer_Checkout extends Mage_Core_Model_Observer
 {
@@ -13,11 +13,10 @@ class Apdh_Blacklist_Model_Observer_Checkout extends Mage_Core_Model_Observer
         $email = $helper->getEmailQuote($id);
 
         if (strpos(Mage::getStoreConfig('blacklist_options/data/allow'), 'checkout') !== false) {
-            $domains = explode(",", Mage::getStoreConfig('blacklist_options/data/domains'));
             $message = Mage::getStoreConfig('blacklist_options/data/message');
             $message = ($message)?$message:$helper->__("Sorry, your email in not allow at this store.");
             if ($email != "") {
-                if ($helper->checkEmail($email, $domains)) {
+                if ($helper->checkEmail($email)) {
                     Mage::getSingleton('core/session')->addError($message);
                     $controller = $observer->getControllerAction();
                     $controller->setFlag('', 'no-dispatch', true);

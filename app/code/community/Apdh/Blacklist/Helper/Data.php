@@ -1,18 +1,26 @@
 <?php
 /*
-* Author: Alex Daqui
-* Web page: http://apdhsolution.com
+* Author: Alex Patricio Daqui Hernandez
+* Web page: https://www.apdh.es
 */
 class Apdh_Blacklist_Helper_Data extends Mage_Core_Helper_Abstract
 {
     protected $_items;
 
-    public function checkEmail($email, $domains)
+    public function checkEmail($email)
     {
-        $email = explode("@", $email);
-        $domain = end($email);
+        $emails = explode(",", Mage::getStoreConfig('blacklist_options/data/emails'));
+        $domains = explode(",", Mage::getStoreConfig('blacklist_options/data/domains'));
+
+        if (in_array($email, $emails, true)) {
+            Mage::helper('blacklist/report')->saveReport($email);
+            return true;
+        }
+
+        $domain = end(explode("@", $email));
         foreach ($domains as $blacklist) {
             if ($this->wildcard($blacklist, $domain)) {
+                Mage::helper('blacklist/report')->saveReport($email);
                 return true;
             }
         }
@@ -110,10 +118,8 @@ class Apdh_Blacklist_Helper_Data extends Mage_Core_Helper_Abstract
         try{
             $trackinginfo->save();
         } catch (Exception $e) {
-            Mage::log("Exception:: ".$e->getMessage(), Zend_Log::ALERT, 'blacklist.log', true);
+            Mage::log("Exception:: ".$e->getMessage(), Zend_Log::ALERT, 'apdh_blacklist.log', true);
         }
 
     }
-
-
 }

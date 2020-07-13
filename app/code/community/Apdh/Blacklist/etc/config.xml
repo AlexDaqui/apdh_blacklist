@@ -2,7 +2,7 @@
     <config>
     <modules>
         <Apdh_Blacklist>
-            <version>0.0.5</version>
+            <version>0.0.6</version>
         </Apdh_Blacklist>
     </modules>
     <frontend>
@@ -71,22 +71,25 @@
     </admin>
     <adminhtml>
         <menu>
-            <blacklist module="blacklist">
-                <title>Apdh Solution</title>
-                <sort_order>71</sort_order>
+            <apdh module="apdh">
                 <children>
-                    <blacklist_admin module="blacklist">
-                        <title>Tracking User</title>
-                        <sort_order>0</sort_order>
+                    <blacklist_admin module="blacklist" translate="label">
+                        <title>Tracking User's (Blacklist)</title>
+                        <sort_order>5</sort_order>
                         <action>blacklist/adminhtml_tracking</action>
                     </blacklist_admin>
-                    <blacklist_config module="blacklist">
-                        <title>Configurations</title>
-                        <sort_order>1</sort_order>
+                    <blacklist_config module="blacklist" translate="label">
+                        <title>Configurations (Blacklist)</title>
+                        <sort_order>6</sort_order>
                         <action>adminhtml/system_config/edit/section/blacklist_options</action>
                     </blacklist_config>
+                    <blacklist_report module="blacklist" translate="label">
+                        <title>Reports (Blacklist)</title>
+                        <sort_order>7</sort_order>
+                        <action>blacklist/adminhtml_report</action>
+                    </blacklist_report>
                 </children>
-            </blacklist>
+            </apdh>
         </menu>
         <acl>
             <resources>
@@ -95,12 +98,24 @@
                     </all>
                     <admin>
                         <children>
+                            <blacklist module="blacklist" translate="label">
+                                <title>Apdh Blacklist</title>
+                                <sort_order>70</sort_order>
+                                <blacklist_admin module="blacklist" translate="label">
+                                    <title>Tracking User's (Blacklist)</title>
+                                    <sort_order>5</sort_order>
+                                </blacklist_admin>
+                                <blacklist_report module="blacklist" translate="label">
+                                    <title>Reports (Blacklist)</title>
+                                    <sort_order>7</sort_order>
+                                </blacklist_report>
+                            </blacklist>
                             <system>
                                 <children>
                                     <config>
                                         <children>
-                                            <blacklist_options>
-                                                <title>Configuration Blacklist Email</title>
+                                            <blacklist_options translate="label">
+                                                <title>Configuration Apdh Blacklist</title>
                                             </blacklist_options>
                                         </children>
                                     </config>

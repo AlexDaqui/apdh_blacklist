@@ -15,4 +15,13 @@
             <block type="blacklist/adminhtml_tracking_edit_tab_checkout" name="tracking.edit.tab.checkout"/>
         </block>
     </blacklist_adminhtml_tracking_getcheckout>
+    <blacklist_adminhtml_report_index>
+        <reference name="head">
+            <action method="addItem"><type>skin_js</type><file>apdh/Chart.min.js</file></action>
+            <action method="addCss"><stylesheet>apdh/Chart.min.css</stylesheet></action>
+        </reference>
+        <reference name="content">
+            <block type="blacklist/adminhtml_report" name="blacklist.report" template="blacklist/report.phtml"/>
+        </reference>
+    </blacklist_adminhtml_report_index>
 </layout>

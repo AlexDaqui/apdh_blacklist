@@ -1,7 +1,7 @@
 <?php
 /*
-* Author: Alex Daqui
-* Web page: http://apdhsolution.com
+* Author: Alex Patricio Daqui Hernandez
+* Web page: https://www.apdh.es
 */
 class Apdh_Blacklist_Block_Adminhtml_Tracking_Grid extends Mage_Adminhtml_Block_Widget_Grid
 {
