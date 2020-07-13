@@ -95,9 +95,9 @@
                 var yearSelected= document.getElementById('year').value;
 
                 if (yearSelected == year) {
-                    alert(<?php echo $this->__("It's the same year. Please, select other.");?>);
+                    alert('<?php echo $this->__("It is the same year. Please, select other.");?>');
                 } else if (years.indexOf(yearSelected) !== -1) {
-                    alert(<?php echo $this->__("The data is already loaded.");?>);
+                    alert('<?php echo $this->__("The data is already loaded.");?>');
                 } else {
                     year = yearSelected;
                     years.push(year);
